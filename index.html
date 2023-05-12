@@ -28,7 +28,7 @@ body, html {
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-white">
+  <div class="row w3-padding white">
     <div class="w3-col s3">
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
@@ -70,62 +70,43 @@ body, html {
     </p>
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i> </i></p>
-      <p>Owner: Lauren Shearman.</p>
+      <p>Owner: Lauren Shearman.</p>\
+
+
+      <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">MERCH</h2>
+    <p class="w3-opacity"><i>We love thrifting</i></p>
+    <p class="w3-justify"> We have created three pieces of merch you will get when you spend over twenty pounds. this merch is all made sustainably and you get to choose which item you would prefer as well as your other items you have brough from us.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Totebag</p>
+        <img src="images/totebag.design.png" class="w3-round w3-margin-bottom" alt="tote bag £8" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>T-shirt </p>
+        <img src="images/tshirt.png" class="w3-round w3-margin-bottom" alt="tshIrt" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Keyring</p>
+        <img src="images/KEYRING.png" class="w3-round" alt="KEYRING" style="width:60%">
+      </div>
     </div>
+  </div>
+
+    </div>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">FIND US</span></h5>
     <img src="images/Brighton.png" alt="Map of Brighton" style="width:100%;max-width:1000px" class="w3-margin-top">
     <p><strong>Opening hours:</strong> 8am to 5pm.</p>
     <p><strong>Address:</strong> 52 NORTH STREET BN2 7GJ</p>
   </div>
 </div>
 
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+
+
+
   
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">colour scheme</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">types of clothing</div>
-      </a>
-    </div>
-
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <div class="w3-row-padding w3-padding-16" id="about">
-        <div class="w3-col m6">
-          <img src="images/menu1.png" alt="menu" style="width:80%">
-        </div>
-        <div class="w3-row-padding w3-padding-16" id="about">
-          <div class="w3-col m6">
-            <img src="" alt="menu" style="width:60%">
-          </div>
-    </div>
-
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    
-  </div>
-</div>  
-
-</div>
-</div>
 
 <!-- Images of posters -->
 <div class="w3-row-padding w3-padding-16" id="about">
@@ -176,10 +157,10 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    tablinks[i].className = tablinks[i].className.replace(" dark grey", "");
   }
   document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
 }
 document.getElementById("myLink").click();
 </script>
